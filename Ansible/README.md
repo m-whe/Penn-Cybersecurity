@@ -10,16 +10,23 @@ These files have been tested and used to generate a live ELK deployment on Azure
 Included Files:
 
 > Files/install-ELK.yml
+
 > Files/filebeat-playbook.yml
+
 > Files/filebeat-config.yml
+
 > Files/metricbeat-config.yml
+
 > Files/ansible.cfg
+
 > Files/hosts
+
 > Files/DVWA.yml
 
 Included Screenshots:
 
 > Images/dockerps.png
+
 > Images/Kibana-Filebeat.png
 
 Table of Contents:
@@ -112,7 +119,7 @@ In order to use the playbook, you will need to have an Ansible control node alre
 SSH into the control node and follow the steps below:
 - Copy the filebeat-playbook.yml file to /etc/ansible/roles.
 - Update the filebeat-config file to include the internal IP address of the ELK VM.
-- Run the playbook, and navigate to 'http://{ELK_VM_publicIPaddress}:5601/app/kibana' to check that the installation worked as expected.
+- Run the playbook, and navigate to `'http://{ELK_VM_publicIPaddress}:5601/app/kibana'` to check that the installation worked as expected.
 
 Which file is the playbook? Where do you copy it?
 
@@ -125,8 +132,8 @@ The `ansible.cfg` configuration file is updated to allow a remote user to connec
 One list in the hosts file (`elk`) contains the private IP address of the ELK server and another list in the hosts file (`webservers`) contains the private IP addresses of the DVWA virtual machines.
 
 Which URL do you navigate to in order to check that the ELK server is running?
-Navigate to 'http://{ELK_VM_publicIPaddress}:5601/app/kibana'.
+Navigate to `'http://{ELK_VM_publicIPaddress}:5601/app/kibana'`.
 
 An example of a live Kibana dashboard in provided in the following screenshot:
 
-Images/Kibana-Filebeat.png
+> Images/Kibana-Filebeat.png
