@@ -47,8 +47,11 @@ Load balancing ensures that the application will be highly available, in additio
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the logs and system metrics.
 
-What does Filebeat watch for? New content added to log files.
-What does Metricbeat record? System metrics and statistics from the operating system.
+What does Filebeat watch for?
+New content added to log files.
+
+What does Metricbeat record?
+System metrics and statistics from the operating system.
 
 The configuration details of each machine may be found below.
 
@@ -92,7 +95,7 @@ Eliminate repetitive tasks. Fewer mistakes or errors.
 
 The playbook implements the following tasks:
 - Install Docker
-- Download docker container wiht ELK stack image (sebp/elk:761)
+- Download docker container with ELK stack image (sebp/elk:761)
 - Configure ports 5601, 9200, 5044
 - Enable docker service with systemd
 
