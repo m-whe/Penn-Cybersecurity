@@ -5,7 +5,7 @@
 # Prompts the user to input a date (MMDD), time (00:00:00 AM/PM),
 # and casino game (string) to find a dealer at the Lucky Duck Casino.
 
-#####ARGS
+## ARGS
 
 read -p 'Date: ' DATE
 read -p 'Time: ' TIME
@@ -13,7 +13,7 @@ read -p 'Casino Game: ' GAME
 
 FILE="${DATE}_Dealer_schedule"
 
-#####MAIN
+## MAIN
 
 shopt -s nocasematch
 
@@ -37,7 +37,7 @@ esac
 
 
 
-#####NOTES
+## NOTES
 
 #grep -i "$TIME" "$FILE" | awk '{ print $1,$2,$5,$6 }'
 
