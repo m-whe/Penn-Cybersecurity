@@ -5,19 +5,19 @@
 # Prompts the user to input a date (MMDD) and time (00:00:00 AM/PM)
 # to find a roulette dealer at the Lucky Duck Casino.
 
-#####ARGS
+## ARGS
 
 read -p 'Date: ' DATE
 read -p 'Time: ' TIME
 
 FILE="${DATE}_Dealer_schedule"
 
-#####MAIN
+## MAIN
 
 grep -i "$TIME" "$FILE" | awk '{ print $1,$2,$5,$6 }'
 
 
-#####NOTES
+## NOTES
 
 #grep -i "03:00:00 AM" 0315_Dealer_schedule
 #grep -i "03:00:00 a" 0315_Dealer_schedule
